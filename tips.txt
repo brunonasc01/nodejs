@@ -1,0 +1,7 @@
+- Para corrigir o git no VSC quando aparece msg de "no source control found"
+1. Vai no %appdata%
+2. Apaga a pasta code
+3. No VSC vai em File/preferences/settings
+4. Em user Settings, adicione:
+  "git.enabled": true,
+  "git.path": "<path to git.exe>"
