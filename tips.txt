@@ -5,3 +5,21 @@
 4. Em user Settings, adicione:
   "git.enabled": true,
   "git.path": "<path to git.exe>"
+
+- Para corrigir o /favicon.ico no request
+Insira o código abaixo na criacao do servidor
+    // control for favicon
+    if (request.url == '/favicon.ico') {
+        response.writeHead(200, {'Content-Type': 'image/x-icon'} );
+        response.end();
+        return;
+    }
+
+
+- Express
+npm	install	-g	express-generator 
+
+Links
+https://expressjs.com
+https://nodejs.org/dist/latest-v11.x/docs/api/
+
